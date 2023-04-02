@@ -1,0 +1,161 @@
+/* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap');
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'poppins', sans-serif;
+  }
+
+  label{
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: hsl(0, 1%, 44%);
+    margin-bottom: 3px;
+  }
+
+  span {
+    color: hsl(259, 100%, 65%);
+  }
+
+  .container{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4.5rem;
+    border-radius: 15px;
+    border-bottom-right-radius: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  form{
+    width: 87%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: space-around; */
+    margin-top: 3rem;
+    text-transform: uppercase;
+  }
+
+  .btn{
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  button{
+    margin-top: 1.5rem;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    padding: 1.2rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    margin-inline: auto;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
+
+  button:active, button:hover, button:focus{
+    background-color: hsl(0, 0%, 8%);
+  }
+
+  .line{
+    width: 100%;
+    height: 2px;
+    background-color: hsl(0, 0%, 94%);
+    position: absolute;
+    inset: 0;
+    top: 50px;
+  }
+
+  .day, .month, .year
+  {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* border: 1px solid yellow; */
+    width: 30%;
+    /* margin-left: 1.2rem;
+    margin-top: 3rem; */
+  }
+
+  input{
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    padding: 0.7rem;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    height: 3.5rem;
+  }
+
+  input:active, input:hover, input:focus {
+    border-color: hsl(259, 100%, 65%);
+  }
+
+  .user-input{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+  }
+
+  .display{
+    /* border: 1px solid yellow; */
+    width: 87%;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.7rem;
+    line-height: 1;
+    white-space: nowrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .attribution{
+    background-color: rgb(184, 143, 255);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  @media only screen and (min-width: 1440px )
+  {
+    .container{
+        width: 50%;
+    }
+    .user-input{
+        /* border: 1px solid red; */
+        max-width: 70%;
+    }
+    button{
+        margin-right: 0;
+    }
+    .display{
+        font-size: 2rem;
+    }
+  }
